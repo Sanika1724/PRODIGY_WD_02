@@ -1,0 +1,127 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(to right, #111827, #2563eb);
+}
+
+/* Main Container */
+.container{
+    width: 90%;
+    max-width: 500px;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Heading */
+h1{
+    margin-bottom: 30px;
+
+    color: #111827;
+
+    font-size: 40px;
+}
+
+/* Timer */
+.timer{
+    font-size: 55px;
+    font-weight: bold;
+
+    margin-bottom: 30px;
+
+    color: #2563eb;
+}
+
+/* Buttons */
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 30px;
+}
+
+button{
+    padding: 12px 22px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #2563eb;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+button:hover{
+    background-color: #111827;
+    transform: scale(1.05);
+}
+
+/* Lap Section */
+.laps{
+    margin-top: 20px;
+}
+
+.laps h2{
+    margin-bottom: 15px;
+    color: #111827;
+}
+
+#lapList{
+    list-style: none;
+
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#lapList li{
+    background-color: #f3f4f6;
+
+    margin-bottom: 10px;
+
+    padding: 10px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+/* Responsive */
+@media(max-width: 600px){
+
+    .timer{
+        font-size: 40px;
+    }
+
+    button{
+        width: 100%;
+    }
+
+}
